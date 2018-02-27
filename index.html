@@ -1,28 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Workforce Job Overview</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <div class="page-wrapper">
-      <nav class="navigation"></nav>
-      <header class="searchbar">
-        <ul>
-          <li><img class ="menu-icon" src="icons/menu.svg"></li>
-          <li class="search-input">
-            <span class="magnifying-glass-icon"><img src="icons/magnifying-glass.svg"></span>
-            <input class="text-search" type="text" placeholder="Search for a job, task or resume"></input>
-          </li>
-          <li><img class="add-user-icon" src="icons/add-user.svg"></li>
-          <li><img class="calendar-icon" src="icons/icon.svg"></li>
-          <li><img class="settings-icon" src="icons/settings.svg"></li>
-        </ul>
-      </header>
-      <main class="job-overview"></main>
-      <aside class="extra-features" role="complimentary"></aside>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Workforce Job Overview</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="checkboxes.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="navigation">
+      <section class="nav profile">
+        <div class="prof-pic">
+        </div>
+        <div class="username-wrapper">
+          <p class="username">Billy Billy Joel</p>
+          <img class="username-expand" src="icons/expand-button.svg">
+        </div>
+      </section>
+      <section class="nav main">
+        <div>
+          <ul>
+            <li><h4>Main</h4></li>
+            <li><img class="main-nav home" src="icons/home.svg">HOME</li>
+            <li><img class="main-nav jobs" src="icons/portfolio-black-tool.svg">JOBS</li>
+            <li><img class="main-nav resumes" src="icons/paper.svg">RESUMES</li>
+            <li><img class="main-nav tasks" src="icons/clipboard.svg">TASKS</li>
+            <li><img class="main-nav calendar" src="icons/school-calendar.svg">CALENDAR</li>
+          </ul>
+        </div>
+      </section>
+      <section class="nav menu">
+        <div>
+          <ul>
+            <li><h4>Menu</h4></li>
+            <li><img class="menu-nav users" src="icons/users.svg">USERS</li>
+            <li><img class="menu-nav location" src="icons/map-pin-silhouette.svg">LOCATIONS</li>
+            <li><img class="menu-nav workflows" src="icons/network.svg">WORKFLOWS</li>
+            <li><img class="menu-nav job-boards" src="icons/target.svg">JOB BOARDS</li>
+            <li><img class="menu-nav social" src="icons/share.svg">SOCIAL</li>
+          </ul>
+      </section>
+      <section class="nav categories">
+        <div class="categories">
+          <ul>
+          <li><h4>Categories</h4></li>
+          <li>
+            <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <i class="helper"></i> Administrative
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <i class="helper"></i> <p>Administrative</p>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <i class="helper"></i> <p>Administrative</p>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              <i class="helper"></i> <p>Administrative</p>
+            </label>
+          </div>
+        </li>
+      </ul>
+        </div>
+      </section>
+    </nav>
+    <header class="searchbar">
+      <ul>
+        <li><img class ="menu-icon" src="icons/menu.svg"></li>
+        <li class="search-input">
+          <span class="magnifying-glass-icon"><img src="icons/magnifying-glass.svg"></span>
+          <input class="text-search" type="text" placeholder="Search for a job, task or resume"></input>
+        </li>
+        <li><img class="add-user-icon" src="icons/add-user.svg"></li>
+        <li><img class="browser-icon" src="icons/browser.svg"></li>
+        <li><img class="settings-icon" src="icons/settings.svg"></li>
+      </ul>
+    </header>
+    <main class="job-overview"></main>
+    <aside class="extra-features" role="complimentary"></aside>
+  </div>
+</body>
 </html>
