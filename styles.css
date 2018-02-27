@@ -13,7 +13,7 @@ html {
   color: #9399A3;
 }
 
- .main,
+.main,
 .menu,
 .categories {
   height: 400px;
@@ -22,9 +22,9 @@ html {
 /********* Searchbar styles *********/
 
 .searchbar {
-  width: 85%;
+  width: 100%;
   height: 75px;
-  display: inline-block;
+  /* display: block; */
   background-color: #fff;
   border-bottom: 1px solid #000;
 }
@@ -86,7 +86,7 @@ html {
 .navigation {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 20%;
   height: 100%;
   background-color: #354051;
 }
@@ -112,8 +112,8 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  height: 30%;
+  padding: 20px;
+  height: 160px;
 }
 
 .prof-pic {
@@ -131,6 +131,7 @@ html {
   font-size: 1em;
   align-items: center;
   margin-top: 20px;
+  width: 100px;
 }
 
 .username-expand {
@@ -168,4 +169,95 @@ html {
 .categories li {
   display: flex;
   align-items: center;
+}
+
+/*********** Styles for main *********/
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.job-overview {
+  display: flex;
+  width: 100%;
+  /* height: 20%; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.job-overview-wrapper {
+  width: 50%;
+}
+
+.job-overview h1 {
+  padding: 50px 0 0 0;
+}
+
+.job-overview a {
+  text-decoration: none;
+  color: #70caf7;
+}
+
+.bookmark-job,
+.edit-job,
+.delete-job {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid #9399A3;
+}
+
+.job-location {
+  height: 14px;
+  padding: 10px 0 0 0;
+}
+
+.job-interaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  padding: 50px 0 0 0;
+  margin-left: 320px;
+}
+
+.job-interaction img {
+  height: 15px;
+}
+
+.open-job {
+  height: 36px;
+  width: 65px;
+  border-radius: 20px;
+  border: 1px solid #9399A3;
+  padding: 6px;
+  text-align: right;
+}
+
+.green-circle {
+  border-radius: 50%;
+	width: 10px;
+	height: 10px;
+  background: green;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.job-more-information {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: flex-start;
+}
+
+.job-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 77%;
+  list-style: none;
+  padding: 50px 50px 20px 37px;
 }

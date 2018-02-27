@@ -54,12 +54,9 @@ input[type="checkbox"]:checked ~ .helper::after {
 }
 
 .checkbox label {
-    /* min-height: 24px; */
     padding-left: 15px;
     display: inherit;
     top: 2px;
-    /* margin-bottom: 0; */
     font-weight: normal;
     cursor: pointer;
-    /* vertical-align: sub; */
 }
