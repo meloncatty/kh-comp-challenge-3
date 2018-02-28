@@ -8,8 +8,10 @@ html {
 }
 
 
-.checkbox p {
+.helper {
   margin: 5px;
+  font-size: .9rem;
+  /* word-wrap: nowrap; */
 }
 
 .page-wrapper {
@@ -17,13 +19,6 @@ html {
   height: 100%;
   color: #9399A3;
 }
-
-.main,
-.menu,
-.categories {
-  height: 400px;
-}
-
 /********* Searchbar styles *********/
 
 .searchbar {
@@ -38,6 +33,7 @@ html {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -67,23 +63,23 @@ html {
   width: 90%;
   background-color: #fff;
   border: none;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .menu-icon {
-  height: 35%;
-  margin: 20px;
+  height: 25%;
+  padding: 25px;
 }
 
 .browser-icon,
 .settings-icon {
   height: 30%;
-  margin: 20px;
+  padding: 25px;
 }
 
 .add-user-icon {
   height: 30%;
-  margin: 20px;
+  padding: 25px;
 }
 
 /******** Navbar Styles ******/
@@ -106,9 +102,6 @@ html {
 }
 
 .nav ul {
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
-  /* align-items: flex-start; */
   list-style: none;
 }
 
@@ -131,17 +124,14 @@ html {
 }
 
 .username-wrapper {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1em;
-  align-items: center;
-  margin-top: 20px;
-  width: 100px;
+  font-size: .9rem;
+  width: 100%;
 }
 
 .username-expand {
   height: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
+  vertical-align: center;
 }
 
 .profile,
@@ -162,7 +152,22 @@ html {
 
 .nav div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+}
+
+.categories {
+  padding: 10px;
+}
+
+
+
+.username-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-nav,
@@ -182,13 +187,12 @@ html {
 .job-overview {
   display: flex;
   width: 100%;
-  /* height: 20%; */
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .job-overview-wrapper {
-  width: 50%;
+  width: 70%;
 }
 
 .job-overview h1 {
@@ -227,9 +231,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 210px; */
   padding: 50px 0 0 0;
-  /* margin-left: 320px; */
 }
 
 .job-interaction img {
@@ -292,10 +294,10 @@ html {
 
 .total-breakdown {
 	background-color:#fafafc;
-	-moz-border-radius:20px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
 	border:1px solid #fafafc;
+  -moz-border-radius:20px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
   width: 40%;
 	cursor:pointer;
 	color: #646e77;
@@ -346,7 +348,6 @@ html {
 .job-desc {
   vertical-align: top;
   width: 31.5%;
-  /* padding: 30px 30px 30px 0; */
 }
 
 .description {
@@ -391,9 +392,7 @@ html {
 
 .hiring-lead p {
   display: inline;
-  /* padding-left: 20px; */
   margin-left: 10px;
-  /* vertical-align: middle; */
 }
 
 .hiring-lead img {
@@ -414,25 +413,11 @@ html {
 }
 
 .edit-desc-button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
-	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
-	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
-	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
-	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
-	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
 	background-color:#7c8ba5;
-	/* border:1px solid #314179; */
-	/* display:inline-block; */
 	cursor:pointer;
 	color:#ffffff;
   border-radius: 5%;
-	/* font-family:Arial; */
 	font-size:13px;
-	font-weight:bold;
 	padding:6px 5px;
 	text-decoration:none;
 }
@@ -448,6 +433,7 @@ html {
 }
 
 /************* style aside ********/
+
 .extra-features {
   width: 30%;
   display: flex;
@@ -578,15 +564,38 @@ html {
 
 .copy-button {
 	background-color:#47bbc2;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-	/* text-shadow:0px 1px 0px #86ae47; */
+}
+
+
+/********* fonts **********/
+
+.page-wrapper {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+}
+
+.navigation {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.description-header,
+.edit-desc-button {
+  font-size: 1rem;
+}
+
+.job-position,
+.description {
+  font-weight: bold;
+}
+
+.categories {
+  font-size: .9rem;
 }
