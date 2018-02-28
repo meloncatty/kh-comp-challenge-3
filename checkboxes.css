@@ -14,7 +14,8 @@ input[type="checkbox"] {
     user-select: none;
     color: #e7e7e7;
 }
-.helper:before {
+
+.admin:before {
   content: '';
   position: absolute;
   left: 0;
@@ -27,6 +28,49 @@ input[type="checkbox"] {
   border: 1px solid #f1d41b;
   background: #f1d41b;
 }
+
+.design:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 1px solid #2dafff;
+  background: #2dafff;
+}
+
+.exec:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 1px solid #e91a61;
+  background: #e91a61;
+}
+
+.human-resources:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 1px solid #03aa8a;
+  background: #03aa8a;
+}
+
 .helper:after {
   content: '';
   display: block;
@@ -42,9 +86,9 @@ input[type="checkbox"] {
   top: 8px;
   left: 7px;
 }
-input[type="checkbox"]:checked ~ .helper::before {
+/* input[type="checkbox"]:checked ~ .helper::before {
     color: #7bbe72;
-}
+} */
 
 input[type="checkbox"]:checked ~ .helper::after {
     -webkit-transform: rotate(-45deg) scale(1);

@@ -57,9 +57,14 @@ html {
   position: relative;
 }
 
+.search-input img {
+  height: 25px;
+  vertical-align: middle;
+}
+
 .text-search {
   height: 3vh;
-  padding: 10px;
+  padding: 5px;
   width: 90%;
   background-color: #fff;
   border: none;
@@ -92,13 +97,15 @@ html {
   background-color: #354051;
 }
 
+
 .nav li {
   padding: 10px;
 }
 
 .nav h4 {
-  font-size: .8em;
-  color: #7f8590;
+  font-size: .9em;
+  color: #68748b;
+  padding-left: 2px;
 }
 
 .nav ul {
@@ -197,6 +204,7 @@ html {
 
 .job-overview h1 {
   padding: 50px 0 0 40px;
+  color: #646e77
 }
 
 .job-overview p {
@@ -206,6 +214,10 @@ html {
 .job-overview a {
   text-decoration: none;
   color: #70caf7;
+}
+
+.job-totals {
+  margin-top: 40px;
 }
 
 .bookmark-job,
@@ -243,7 +255,9 @@ html {
   width: 65px;
   border-radius: 20px;
   border: 1px solid #9399A3;
-  padding: 6px;
+  padding: 7px;
+  color: #646e77;
+  font-weight: bold;
   text-align: right;
 }
 
@@ -277,19 +291,37 @@ html {
 /******** job data styling ********/
 
 .graphical-data {
-  height: 350px;
-  width: 100%;
+  width: auto;
   background: #edf2f6;
+  padding: 23px;
+}
+
+.figure-content {
+  width: 70%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-
 .job-totals {
+  width: auto;
+}
+
+.bar-graph img {
+  height: 65%;
+  width: 95%;
+}
+
+.bar-graph {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figure {
+  display: flex;
 }
 
 .total-breakdown {
@@ -301,8 +333,9 @@ html {
   width: 40%;
 	cursor:pointer;
 	color: #646e77;
-	font-size:15px;
-	padding:6px;
+	font-size: .8rem;
+	padding:10px;
+  font-weight: bold;
 	text-decoration:none;
   text-align: center;
   border: 2px solid #d3d9df;
@@ -384,6 +417,10 @@ html {
 
 .description-p {
   background: #fafafc;
+}
+
+.description-p p {
+  font-weight: bold;
 }
 
 .hiring-lead {
