@@ -92,7 +92,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 100%;
+  height: auto;
   background-color: #354051;
 }
 
@@ -288,19 +288,148 @@ html {
 	border-radius:28px;
 	border:1px solid #fafafc;
   width: 40%;
-	/* display:inline-block; */
 	cursor:pointer;
 	color: #646e77;
-	/* font-family:Arial; */
 	font-size:15px;
 	padding:6px;
 	text-decoration:none;
   text-align: center;
-	/* text-shadow:0px 1px 0px #2f6627; */
   border: 2px solid #d3d9df;
 }
 
 .myButton:active {
 	position:relative;
+	top:1px;
+}
+
+/********* job description styles *******/
+
+.job-description {
+  background: #edf2f6;
+  padding: 40px;
+  width: auto;
+  height: auto;
+}
+
+.job-description p {
+  background: #fafafc;
+}
+
+.job-description-content {
+  display: table;
+  width: 57%;
+}
+
+.cell {
+    display: table-cell;
+    height: 3rem;
+    vertical-align: middle;
+    padding: 20px 20px 20px 0;
+}
+
+.description-header {
+  width: 32%;
+  padding-left: 20px;
+}
+
+.job-position {
+  width: 32%;
+}
+
+.job-desc {
+  vertical-align: top;
+  width: 30%;
+  /* padding: 30px 30px 30px 0; */
+}
+
+.description {
+  padding: 20px 20px 20px 20px;
+}
+
+.cell-p {
+  display: table-cell;
+  height: 3rem;
+  vertical-align: top;
+  table-layout: auto;
+  padding: 21px 25px 20px 12px;
+  word-wrap: break-word;
+}
+
+.job-description-content div {
+  border-bottom: 1px solid #ededed;
+}
+
+.description-header,
+.edit-desc {
+  background: #6f7e95;
+  color: #fefcfe;
+}
+
+.description {
+  background: #fafafc;
+}
+
+.description-p img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.description-p {
+  background: #fafafc;
+}
+
+.hiring-lead {
+  background: #fafafc;
+}
+
+.hiring-lead p {
+  display: inline;
+  /* padding-left: 20px; */
+  margin-left: 10px;
+  /* vertical-align: middle; */
+}
+
+.hiring-lead img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.edit-desc img {
+  height: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.edit-desc span{
+  vertical-align: middle;
+  margin-left: 6px;
+  font-size: 1.1em;
+}
+
+.edit-desc-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#7c8ba5;
+	/* border:1px solid #314179; */
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+  border-radius: 5%;
+	/* font-family:Arial; */
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 5px;
+	text-decoration:none;
+}
+
+.edit-desc:active {
 	top:1px;
 }
