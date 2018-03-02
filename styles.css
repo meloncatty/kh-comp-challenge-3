@@ -24,7 +24,6 @@ html {
 .searchbar {
   width: 100%;
   height: 75px;
-  /* display: block; */
   background-color: #fff;
   border-bottom: 1px solid #e5e5e6;
 }
@@ -40,9 +39,14 @@ html {
 
 .searchbar li {
   border-left: 1px solid #e5e5e6;
-  margin: 0;
-  padding: 0;
   height: 100%;
+}
+
+.prof-pic-small {
+  display: none;
+  height: 38px;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 .search-input {
@@ -240,6 +244,7 @@ html {
 }
 
 .job-interaction {
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,6 +292,13 @@ html {
   padding: 50px 50px 20px 40px;
 }
 
+.hidden-image {
+  display: none;
+}
+
+.link-wrapper-hidden {
+    display: none;
+}
 
 /******** job data styling ********/
 
@@ -577,6 +589,10 @@ figure {
   justify-content: space-around;
 }
 
+.shorten-links {
+  display: none;
+}
+
 .with-copy input {
   height: 15px;
   width: 80%;
@@ -626,6 +642,10 @@ figure {
 .description-header,
 .edit-desc-button {
   font-size: 1rem;
+}
+
+.hide-me {
+  display: none;
 }
 
 .job-position,
