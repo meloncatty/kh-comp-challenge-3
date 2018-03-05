@@ -116,7 +116,8 @@
   }
 
   .link-job {
-    width: 30%;
+    width: 40%;
+    padding: 5px;
   }
 }
 
@@ -132,11 +133,8 @@
 
     .hide-me {
       display: flex;
-    }
-
-    .with-copy,
-    .without-copy {
-      display: none;
+      justify-content: center;
+      align-items: center;
     }
 
     .job-overview-wrapper {
@@ -222,8 +220,18 @@
 
     .explore-links {
       width: 100%;
-      justify-content: space-between;
-      height: 205px;
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .with-copy {
+      border-bottom: none;
+    }
+
+    .explore-links section:last-child {
+      margin-bottom: 20px;
     }
   }
 
@@ -244,23 +252,6 @@
     .link-wrapper-hidden img{
       height: 20px;
       vertical-align: middle;
-    }
-
-    .with-copy,
-    .without-copy {
-      display: none;
-    }
-
-    .lorem-ipsum {
-      width: 30%;
-      margin-left: 10px;
-    }
-
-    .shorten-links {
-      flex-wrap: wrap;
-      width: 100%;
-      height: auto;
-      display: block;
     }
 
     .shorten-links h3 {
@@ -289,7 +280,13 @@
     .explore-links {
       width: 100%;
       justify-content: center;
-      height: 105px;
+      height: 260px;
+      height: auto;
+      align-items: center;
+    }
+
+    .with-copy {
+      border-bottom: none;
     }
   }
 
@@ -297,6 +294,14 @@
     @media only screen and (max-width: 560px){
       .magnifying-glass-icon {
         padding: 18px 0 18px 18px;
+      }
+
+      .without-copy input {
+        width: 96%;
+      }
+
+      .with-copy {
+        border-bottom: none;
       }
 
       .prof-pic-small {
@@ -341,6 +346,15 @@
       .shorten-links {
         display: flex;
         flex-wrap: nowrap;
-        width: auto;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hide-me {
+        margin-right: 20px;
+        justify-content: center;
+        align-items: center;
+        width 10%;
       }
   }
